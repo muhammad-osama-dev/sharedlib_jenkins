@@ -1,6 +1,6 @@
 def call(){
     pipeline {
-        agent { label 'ubuntu-ec2' }
+        agent { label 'agent1' }
         stages {
             stage('install_nginx') { 
                 steps {
