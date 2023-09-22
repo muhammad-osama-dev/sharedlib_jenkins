@@ -17,7 +17,7 @@ def call() {
             stage('Test') { 
                 steps {
                     echo 'btngan2'
-                    sh 'sudo systemctl nginx status' 
+                    sh 'sudo systemctl status nginx'
                 }
             }
         }
