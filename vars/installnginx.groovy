@@ -4,6 +4,7 @@ def call() {
         stages {
             stage('install_nginx') { 
                 steps {
+                    echo 'btngan'
                     sh 'sudo apt-get install nginx -y'
                 }
             }
@@ -15,6 +16,7 @@ def call() {
             }
             stage('Test') { 
                 steps {
+                    echo 'btngan2'
                     sh 'sudo systemctl nginx status' 
                 }
             }
