@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 def call() {
     pipeline {
-        agent any
+        agent { label 'agent1' }
         stages {
             stage('install_nginx') { 
                 steps {
